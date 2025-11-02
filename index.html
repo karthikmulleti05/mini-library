@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Mini Online Library</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+  }
+  h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+  }
+  .book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 25px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .book-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 0.1);
+    padding: 15px;
+    text-align: center;
+  }
+  details {
+    cursor: pointer;
+  }
+  summary {
+    list-style: none;
+    outline: none;
+  }
+  summary::-webkit-details-marker {
+    display: none;
+  }
+  .book-logo {
+    width: 100px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 2px solid transparent;
+    margin-bottom: 10px;
+    display: inline-block;
+  }
+  summary:hover .book-logo {
+    border-color: #1abc9c;
+  }
+  .book-name {
+    font-weight: 600;
+    color: #2980b9;
+    text-decoration: none;
+    font-size: 1.1rem;
+    display: block;
+    margin-bottom: 10px;
+  }
+  .book-name:hover {
+    text-decoration: underline;
+  }
+  .book-info {
+    font-size: 0.9rem;
+    color: #555;
+    padding-top: 8px;
+  }
+</style>
+</head>
+<body>
+
+<h1>Mini Online Library</h1>
+
+<div class="book-grid">
+  <div class="book-card">
+    <details>
+      <summary>
+        <img class="book-logo" src="logo/doepic.jpg" alt="Do Epic Shit" />
+      </summary>
+      <div class="book-info">
+        <p><strong>Author:</strong> Ankur Warikoo</p>
+        <p><strong>Published on :</strong>December 27,2021 </p>
+      </div>
+    </details>
+    <a class="book-name" href="content/Do-Epic-Shit.pdf" target="_blank" rel="noopener noreferrer">Do Epic Shit</a>
+  </div>
+
+  <div class="book-card">
+    <details>
+      <summary>
+        <img class="book-logo" src="logo/get epic.jpeg" alt="Get Epic Shit Done" />
+      </summary>
+      <div class="book-info">
+        <p><strong>Author:</strong> Ankur Warikoo</p>
+        <p><strong>Published on :</strong> December 17,2022</p>
+      </div>
+    </details>
+    <a class="book-name" href="content/Get Epic Shit Done .pdf" target="_blank" rel="noopener noreferrer">Get Epic Shit Done</a>
+  </div>
+<div class="book-card">
+    <details>
+      <summary>
+        <img class="book-logo" src="logo/7hab.jpeg" alt="7 Habits of Highly Effective People" />
+      </summary>
+      <div class="book-info">
+        <p><strong>Author:</strong> Stephen R.Covey</p>
+        <p><strong>Published on :</strong>1989</p>
+      </div>
+    </details>
+    <a class="book-name" href="content/7 Habits of Highly Effective People.pdf" target="_blank" rel="noopener noreferrer">7 Habits of Highly Effective People</a>
+  </div>
+
